@@ -6,10 +6,12 @@ namespace interfaces_flowershop {
         public int maximumHeight { get; set; }
         public int speed { get; set; }
         public bool hasFeathers { get; set; }
+        public bool isVampire {get; set;}
+        public string name {get; set;}
 
         public void fly()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{name} the bat is flying!");
         }
     }
 }
